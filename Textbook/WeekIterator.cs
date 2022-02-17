@@ -1,6 +1,8 @@
+using System.Collections;
+
 namespace Textbook
 {
-    public class WeekIterator : IWeekIterator
+    public class WeekIterator : IEnumerator
     {
         private readonly string[] weeks;
         private int position;
@@ -12,12 +14,17 @@ namespace Textbook
             this.position = -1;
         }
 
-        public string Current => weeks[position];
+        public object Current => weeks[position];
 
         public bool MoveNext()
         {
             if (++position == weeks.Length) return false;
             return true;
+        }
+
+        public void Reset()
+        {
+            this.position = -1;
         }
     }
 }

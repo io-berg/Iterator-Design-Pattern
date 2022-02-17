@@ -1,6 +1,8 @@
+using System.Collections;
+
 namespace Textbook
 {
-    public class Week
+    public class Week : IEnumerable
     {
         private string[] week = new string[]{
             "Monday",
@@ -13,9 +15,6 @@ namespace Textbook
             };
 
 
-        public IWeekIterator GetEnumerator()
-        {
-            return new WeekIterator(week);
-        }
+        public IEnumerator GetEnumerator() => new WeekIterator(week);
     }
 }
