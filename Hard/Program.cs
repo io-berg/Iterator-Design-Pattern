@@ -75,11 +75,13 @@ public class KonkretIterator : AbstraktIterator
     {
         this.aggregate = aggregate;
     }
+    
     // Hämtar första elementet i vår samling.
     public override object First()
     {
         return aggregate[0];
     }
+
     // Hämtar nästa element i vår samling.
     public override object Next()
     {
@@ -90,11 +92,13 @@ public class KonkretIterator : AbstraktIterator
         }
         return ret;
     }
+
     // Returnerar det nuvarande "valda" elementet.
     public override object CurrentItem()
     {
         return aggregate[current];
     }
+
     // Kollar utifall vi har gått igenom hela samlingen.
     public override bool IsDone()
     {
