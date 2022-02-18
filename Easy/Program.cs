@@ -1,4 +1,5 @@
 ﻿using Easy;
+using System.Linq;
 
 Week week = new Week();
 

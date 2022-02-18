@@ -22,5 +22,7 @@ namespace Easy
                 yield return day;
             }
         }
+
+
     }
 }

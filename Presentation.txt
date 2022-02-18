@@ -1,0 +1,3 @@
+Name: Iterator Design Pattern
+
+Problem som behöver lösas: Att enumerera över en collection utan att exponera underliggande datastruktur 
