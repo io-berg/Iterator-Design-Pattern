@@ -2,10 +2,12 @@
 
 Week week = new Week();
 
-foreach (var day in week)
+
+var iterator = week.GetEnumerator();
+
+while (iterator.MoveNext())
 {
-    Console.WriteLine(day);
+    System.Console.WriteLine(iterator.Current);
 }
 
 
-System.Console.WriteLine("Today is: " + week[4]);
